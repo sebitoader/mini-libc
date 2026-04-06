@@ -9,7 +9,6 @@
 
 void *malloc(size_t size)
 {
-	/* TODO: Implement malloc(). */
 	if (size == 0) {
         return NULL;
     }
@@ -26,7 +25,6 @@ void *malloc(size_t size)
 
 void *calloc(size_t nmemb, size_t size)
 {
-	/* TODO: Implement calloc(). */
 	size_t total_size = nmemb * size;
     if (nmemb != 0 && total_size / nmemb != size) {
         return NULL;
@@ -41,7 +39,6 @@ void *calloc(size_t nmemb, size_t size)
 
 void free(void *ptr)
 {
-	/* TODO: Implement free(). */
 	if (ptr == NULL) {
     	return;
     }
@@ -55,7 +52,6 @@ void free(void *ptr)
 
 void *realloc(void *ptr, size_t size)
 {
-	/* TODO: Implement realloc(). */
 	 if (ptr == NULL) {
         return malloc(size);
     }
@@ -82,7 +78,6 @@ void *realloc(void *ptr, size_t size)
 
 void *reallocarray(void *ptr, size_t nmemb, size_t size)
 {
-	/* TODO: Implement reallocarray(). */
 	size_t total_size = nmemb * size;
     if (nmemb != 0 && total_size / nmemb != size) {
         return NULL;
